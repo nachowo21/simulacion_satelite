@@ -6,6 +6,7 @@ sabemos que los planetas poseen velocidad de escape, esto dependiendo la masa de
 por otro lado tenemos un posible caso en el cual el satelite puede colisionar con la luna, entonces podemos ver (dependiendo de la posicion inicial de la luna ), si es que nuestro satelite puede o no colisionar con la luna.
 
 **¿sirve la aporximacion newtoniana?**
+
 Como sabemos las ecuaciones de newton son buenas siempre y cuando se utilicen en modelos de dos cuerpos, en cambio cuando se agrega un tercero, esta aproximación comienza a fallar. Para solucionar esto, utilizamos un integrador orbital conocido como leapfrog, el cual es bueno especificamente para escalas de tiempo mas grandes.
 la computacion nos soluciona este problema ya que para ver el comportamiento a través del integrador leapfrog se hacen iteraciones, para esto la computacion nos facilita y apresura el calculo requerido.
 
