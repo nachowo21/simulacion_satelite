@@ -1,22 +1,35 @@
 # Simulacion_satelite
-Programa para simular la trayectoria de un satelite considerando un sistema tierra-luna
+Software de simulación para una trayectoria de un satélite alrededor del planeta, considerando la Luna o el Sol.
 
-### Problematica a solucionar
-Sabemos que los planetas poseen velocidad de escape, esto dependiendo la masa del planeta (para nuestro caso son 11 km por segundo), esta simulacion sirve para ver a que velocidades es factibles que un satelite salga de la estrella y con qué ángulo de lanzamiento.
-por otro lado tenemos un posible caso en el cual el satelite puede colisionar con la luna, entonces podemos ver (dependiendo de la posicion inicial de la luna ), si es que nuestro satelite puede o no colisionar con la luna.
+### Problemática a solucionar
+Si un cuerpo desea salir de la atracción gravitacional de la tierra desde su superficie, necesita ir a determinada velocidad, llamada velocidad de escape, esto dependiendo de la masa del planeta (11 km por segundo en el caso del Planeta Tierra ). Esta simulación sirve para ver a qué velocidades es factible que un satélite escape de la Tierra y con qué ángulo de lanzamiento desde la superficie de este.
+También se puede considerar el caso en que el satélite colisione con la luna, entonces podemos ver (dependiendo de la posición inicial de la luna ), si es que nuestro satélite puede o no colisionar con la luna.
 
-**¿Sirve la aporximacion newtoniana?**
+**¿Sirve la aproximación newtoniana?**
 
-Como sabemos las ecuaciones de newton son buenas siempre y cuando se utilicen en modelos de dos cuerpos, en cambio cuando se agrega un tercero, esta aproximación comienza a fallar. Para solucionar esto, utilizamos un integrador orbital conocido como leapfrog, el cual es bueno especificamente para escalas de tiempo mas grandes.
-la computacion nos soluciona este problema ya que para ver el comportamiento a través del integrador leapfrog se hacen iteraciones, para esto la computacion nos facilita y apresura el calculo requerido.
+Como sabemos las ecuaciones de newton son buenas siempre y cuando se utilicen en modelos de dos cuerpos, en cambio cuando se agrega un tercero, esta aproximación comienza a fallar. Para solucionar esto, utilizamos un integrador orbital conocido como leapfrog, el cual es bueno específicamente para escalas de tiempo más grandes.
+La computación agiliza con el problema, permitiendo ver el comportamiento a través de varias iteraciones aplicando el integrador leapfrog.
 
 ### Variables requeridas por el código
-Como ya se dijo anteriormente el código requiere solamente de dos variables:
+Como se van a ocupar las ecuación de leapfrog, y gravitacional, se necesita de :
 
   >* Velocidad inicial
   >* Ángulo de lanzamiento
+  >* Masa de los cuerpos
+  >* Posición de los cuerpos
 
-Luego el codigo simplemente se encargará él mismo de ver el tiempo mas efectivo, respetando las condiciones para que se complete a lo menos un ciclo 
-### Versiones de las librerias
+### Output
+
+>* Gráfico con los cuerpos.
+2 Barras : 
+>* La rapidez inicial.
+>* El ángulo de disparo.
+3 Opciones : 
+>* El satélite orbitando la Tierra
+>* El satélite orbitando la Tierra, considerando la Luna
+>* El satélite orbitando la Tierra, considerando la Luna y el Sol
+
+### Versiones de las librerías
+
   >* numpy = 1.26.2
-  >*matplotlib = 3.5.1
+  >* matplotlib = 3.5.1
