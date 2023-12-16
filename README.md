@@ -20,14 +20,25 @@ Como se van a ocupar las ecuación de leapfrog, y gravitacional, se necesita de 
 
 ### Output
 
->* Gráfico con los cuerpos.
+  >* Gráfico con los cuerpos.
+
 2 Barras : 
->* La rapidez inicial.
->* El ángulo de disparo.
+
+  >* La rapidez inicial.
+  >* El ángulo de disparo.
+
 3 Opciones : 
->* El satélite orbitando la Tierra
->* El satélite orbitando la Tierra, considerando la Luna
->* El satélite orbitando la Tierra, considerando la Luna y el Sol
+
+  >* El satélite orbitando la Tierra
+  >* El satélite orbitando la Tierra, considerando la Luna
+  >* El satélite orbitando la Tierra, considerando la Luna y el Sol
+
+3 Botones : 
+
+  >* Iniciar: Inicia la animación
+  >* Pausar: Pausa la animación
+  >* Aplicar/Reiniciar: Aplica los cambios de la velocidad y angulo de las barras / reinicia la animación.
+
 
 ### Versiones de las librerías
 
